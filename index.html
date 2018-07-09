@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Camp Nou</title>
+      <link rel="shortcut icon" href="Barcelona.png">
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/mover.js"></script>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/normalize.css">
+   </head>
+   <body>
+      <!--LISTA JUGADORES TITULARES-->
+      <div class="lista">
+         <h2>TITULARES</h2>
+         <!--PORTERO-->
+         <img id="mover-1" src="jugadores/Ter-Stegen.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Ter-Stegen">
+         <!--DEFENSA-->
+         <img id="mover-2" src="jugadores/Jordi-Alba.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Jordi-Alba">
+         <img id="mover-3" src="jugadores/Umtiti.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Umtiti">
+         <img id="mover-4" src="jugadores/Piqué.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Piqué">
+         <img id="mover-5" src="jugadores/Nélson-Semedo.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Nélson-Semedo">
+         <!--MEDIOCOMPISTAS-->
+         <img id="mover-6" src="jugadores/André-Gomes.jpg" draggable="true" ondragstart="arrastrar(event)" alt="andré-Gomes">
+         <img id="mover-7" src="jugadores/Sergio-Busquets.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Sergio-Busquets">
+         <img id="mover-8" src="jugadores/I-Rakitic.jpg" draggable="true" ondragstart="arrastrar(event)" alt="I-Rakitic">
+         <!--DELANTEROS-->
+         <img id="mover-9" src="jugadores/Dembélé.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Dembélé">
+         <img id="mover-10" src="jugadores/Luis-Suárez.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Luis-Suárez">
+         <img id="mover-11" src="jugadores/Messi.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Messi"> 
+      </div>
+      <!--FIN LISTA JUGADORES TITULARES-->
+
+      <!--SUPLENTES-->
+      <div class="suplentes">
+         <h3>SUPLENTES</h3>
+         <img id="mover-12" src="jugadores/suplentes/Cillessen.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Cillessen">
+         <img id="mover-13" src="jugadores/suplentes/Aleix-Vidal.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Aleix-Vidal">
+         <img id="mover-14" src="jugadores/suplentes/Aleña.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Aleña">
+         <img id="mover-15" src="jugadores/suplentes/Countinho.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Coutinho">
+         <img id="mover-16" src="jugadores/suplentes/Denis-Suárez.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Denis-Suárez">
+         <img id="mover-17" src="jugadores/suplentes/Digne.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Digne">
+         <img id="mover-18" src="jugadores/suplentes/Douglas.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Douglas">
+         <img id="mover-19" src="jugadores/suplentes/Merlson-Santos.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Merson-Santos">
+         <img id="mover-20" src="jugadores/suplentes/Munir.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Munir">
+         <img id="mover-21" src="jugadores/suplentes/Paco-Alcácer.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Paco-Alcácer">
+         <img id="mover-22" src="jugadores/suplentes/Paulinho.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Paulinho">
+         <img id="mover-23" src="jugadores/suplentes/Rafinha.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Rafinha">
+         <img id="mover-24" src="jugadores/suplentes/S-Roberto.jpg" draggable="true" ondragstart="arrastrar(event)" alt="S-Roberto">
+         <img id="mover-25" src="jugadores/suplentes/Samper.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Samper">
+         <img id="mover-26" src="jugadores/suplentes/Vermaelen.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Vermaelen">
+         <img id="mover-27" src="jugadores/suplentes/Y-Mina.jpg" draggable="true" ondragstart="arrastrar(event)" alt="Y-Mina">
+      </div>
+
+      <!--ESTADIO DE FUTBOL-->
+      <div class="cancha" id="estadio">
+         <!--PORTERO-->
+         <div class="posicion">
+            <div class="caja" ondrop="soltar(event)" ondragover="permitir(event)"></div>
+            <div class="portero"></div>
+         </div>
+         <!--DEFENSA-->
+         <div class="posicion-2">
+            <div class="caja-2" ondrop="soltar(event)" ondragover="permitir(event)"></div>
+            <div class="defensa-1"></div>
+         </div>
+         <div class="posicion-3">
+            <div class="caja-3" ondrop="soltar(event)" ondragover="permitir(event)"></div>
+            <div class="defensa-2"></div>
+         </div>
+         <div class="posicion-4">
+            <div class="caja-4" ondrop="soltar(event)" ondragover="permitir(event)"></div>
+            <div class="defensa-3"></div>
+         </div>
+         <div class="posicion-5">
+            <div class="caja-5" ondrop="soltar(event)" ondragover="permitir(event)"></div>
+            <div class="defensa-4"></div>
+         </div>
+         <!--MEDIACOMPISTAS-->
+         <div class="posicion-6">
+            <div class="caja-6" ondrop="soltar(event)" ondragover="permitir(event)"></div>
+            <div class="medio"></div>
+         </div>
+         <div class="posicion-7">
+            <div class="caja-7" ondrop="soltar(event)" ondragover="permitir(event)"></div>
+            <div class="medio-2"></div>
+         </div>
+         <div class="posicion-8">
+            <div class="caja-8" ondrop="soltar(event)" ondragover="permitir(event)"></div>
+            <div class="medio-3"></div>
+         </div>
+         <!--DELANTEROS-->
+         <div class="posicion-9">
+            <div class="caja-9" ondrop="soltar(event)" ondragover="permitir(event)"></div>
+            <div class="delantero"></div>
+         </div>
+         <div class="posicion-10">
+            <div class="caja-10" ondrop="soltar(event)" ondragover="permitir(event)"></div>
+            <div class="delantero-2"></div>
+         </div>
+         <div class="posicion-11">
+            <div class="caja-11" ondrop="soltar(event)" ondragover="permitir(event)"></div>
+            <div class="delantero-3"></div>
+         </div>
+      </div>
+      <!--FIN ESTADIO-->
+
+      <!--DIRECTOR TÉCNICO-->
+      <div class="manager">
+         <img src="jugadores/DT-Ernesto-Vaverde.jpg" alt="DT">
+         <div class="dt"></div>
+      </div>
+
+      <!--BANCA JUGADORES-->
+      <script>
+         $(document).ready(function(){
+         
+         /*NOTA: LOS JUGADORES SE CAMBIAN EN
+         JSON SI SON TITULARES O SUPLENTES:
+         TITULAR "SI" SUPLENTE "NO"*/
+                
+         $.getJSON("jugadores.json", function(titulares){
+         
+           
+                          //PORTERO
+         
+            if(titulares.jugadores[0].jugar == "si"){
+             //Titular
+             let nombre = "<h2>" + titulares.jugadores[0].nombre + "</h2>";
+         
+             $(".portero").append(nombre);
+            }
+            else {
+             //Suplente
+             let nombre = "<h2>" + titulares.jugadores[9].nombre + "</h2>";
+         
+             $(".portero").append(nombre);
+            }
+           
+            
+           
+                           //DEFENSA
+         
+            if(titulares.jugadores[13].jugar == "si"){
+             //Titular
+            let nombre = "<h2>" + titulares.jugadores[13].nombre + "</h2>";
+         
+            $(".defensa-1").append(nombre);
+         
+            }
+            else {
+             //Suplente
+             let nombre = "<h2>" + titulares.jugadores[14].nombre + "</h2>";
+         
+             $(".defensa-1").append(nombre);
+         
+            }
+         
+         
+            if(titulares.jugadores[18].jugar == "si"){
+             //Titular
+            let nombre = "<h2>" + titulares.jugadores[18].nombre + "</h2>";
+         
+            $(".defensa-2").append(nombre);
+         
+            }
+            else {
+             //Suplente
+             let nombre = "<h2>" + titulares.jugadores[20].nombre + "</h2>";
+         
+             $(".defensa-2").append(nombre);
+         
+            }
+         
+            
+           
+            if(titulares.jugadores[2].jugar == "si"){
+             //Titular
+            let nombre = "<h2>" + titulares.jugadores[2].nombre + "</h2>";
+         
+            $(".defensa-3").append(nombre);
+         
+            }
+            else {
+             //Suplente
+             let nombre = "<h2>" + titulares.jugadores[15].nombre + "</h2>";
+         
+             $(".defensa-3").append(nombre);
+         
+            }
+         
+         
+            if(titulares.jugadores[1].jugar == "si"){
+             //Titular
+            let nombre = "<h2>" + titulares.jugadores[1].nombre + "</h2>";
+         
+            $(".defensa-4").append(nombre);
+         
+            }
+            else {
+             //Suplente
+             let nombre = "<h2>" + titulares.jugadores[17].nombre + "</h2>";
+         
+             $(".defensa-4").append(nombre);
+         
+            }
+         
+         
+                             //MEDIACAMPISTAS
+            
+           if(titulares.jugadores[16].jugar == "si"){
+             //Titular
+           let nombre = "<h2>" + titulares.jugadores[16].nombre + "</h2>";
+         
+           $(".medio").append(nombre);
+         
+            }
+           else {
+           //Suplente
+           let nombre = "<h2>" + titulares.jugadores[11].nombre + "</h2>";
+         
+           $(".medio").append(nombre);
+         
+           }
+         
+         
+           if(titulares.jugadores[4].jugar == "si"){
+             //Titular
+           let nombre = "<h2>" + titulares.jugadores[4].nombre + "</h2>";
+         
+           $(".medio-2").append(nombre);
+         
+            }
+           else {
+           //Suplente
+           let nombre = "<h2>" + titulares.jugadores[11].nombre + "</h2>";
+         
+           $(".medio-2").append(nombre);
+         
+           }
+         
+         
+           if(titulares.jugadores[3].jugar == "si"){
+             //Titular
+           let nombre = "<h2>" + titulares.jugadores[3].nombre + "</h2>";
+         
+           $(".medio-3").append(nombre);
+         
+            }
+           else {
+           //Suplente
+           let nombre = "<h2>" + titulares.jugadores[15].nombre + "</h2>";
+         
+           $(".medio-3").append(nombre);
+         
+           }
+         
+         
+                             //DELANTERIOS
+         
+           if(titulares.jugadores[8].jugar == "si"){
+             //Titular
+           let nombre = "<h2>" + titulares.jugadores[8].nombre + "</h2>";
+         
+           $(".delantero").append(nombre);
+         
+            }
+           else {
+           //Suplente
+           let nombre = "<h2>" + titulares.jugadores[5].nombre + "</h2>";
+         
+           $(".delantero").append(nombre);
+         
+           }
+         
+         
+           if(titulares.jugadores[6].jugar == "si"){
+             //Titular
+           let nombre = "<h2>" + titulares.jugadores[6].nombre + "</h2>";
+         
+           $(".delantero-2").append(nombre);
+         
+            }
+           else {
+           //Suplente
+           let nombre = "<h2>" + titulares.jugadores[12].nombre + "</h2>";
+         
+           $(".delantero-2").append(nombre);
+         
+           }
+         
+         
+            if(titulares.jugadores[7].jugar == "si"){
+             //Titular
+           let nombre = "<h2>" + titulares.jugadores[7].nombre + "</h2>";
+         
+           $(".delantero-3").append(nombre);
+         
+            }
+           else {
+           //Suplente
+           let nombre = "<h2>" + titulares.jugadores[25].nombre + "</h2>";
+         
+           $(".delantero-3").append(nombre);
+         
+           }
+         
+         
+                           //DIRECTOR TÉCNICO
+                           
+           let nombre = "<h2>" + titulares.jugadores[27].nombre + "</h2>";
+         
+           $(".dt").append(nombre);   
+         
+           });
+         });
+      </script>
+   </body>
+</html>

@@ -1,0 +1,200 @@
+{
+
+	"jugadores":[
+
+	{
+    
+    "jugar": "si",
+    "nombre": "Ter Stegen"
+
+	},
+
+	{
+    
+    "jugar": "si",
+    "nombre": "Nélson Semedo"
+
+	},
+
+	{
+    
+    "jugar": "si",
+    "nombre": "Piqué"
+
+	},
+
+	{
+    
+    "jugar": "si",
+    "nombre": "I.Rakitic"
+
+	},
+
+	{
+    
+    "jugar": "si",
+    "nombre": "Sergio Bisquets"
+
+	},
+
+	{
+    
+    
+    "nombre": "Denis Suárez"
+
+	},
+
+	{
+    
+    "jugar": "si",
+    "nombre": "Luis Suárez"
+
+	},
+
+	{
+    
+    "jugar": "si",
+    "nombre": "Messi"
+
+	},
+
+	{
+    
+    "jugar": "si",
+    "nombre": "Dembélé"
+
+	},
+
+	{
+
+   
+    "nombre": "Cillessen"
+
+	},
+
+	{
+    
+   
+    "nombre": "Coutinho"
+
+	},
+
+	{
+    
+   
+    "nombre": "Paulinho"
+
+	},
+
+	{
+    
+    
+    "nombre": "Paco Alcácer"
+
+	},
+
+	{
+    
+    "jugar": "si",
+    "nombre": "Jordi Alba"
+
+	},
+
+	{
+    
+   
+    "nombre": "Digne"
+
+	},
+
+	{
+    
+    "nombre": "S.Roberto"
+
+	},
+
+	{
+    
+    "jugar": "si",
+    "nombre": "André Gomes"
+
+	},
+
+	{
+    
+    
+    "nombre": "Aleix Vidal"
+
+	},
+
+	{
+    
+    "jugar": "si",
+    "nombre": "Umtiti"
+
+	},
+
+	{
+    
+    "nombre": "Y.Mina"
+
+	},
+
+	{
+    
+    "nombre": "Vermaelen"
+
+	},
+
+	{
+    
+  
+    "nombre": "Merlon Santos"
+
+	},
+
+	{
+    
+   
+    "nombre": " Aleñá"
+
+	},
+
+	{
+    
+    
+    "nombre": "Munir"
+
+	},
+
+	{
+    
+   
+    "nombre": "Douglas"
+
+	},
+
+	{
+    
+   
+    "nombre": "Rafinha"
+
+	},
+
+	{
+    
+    
+    "nombre": " Samper"
+
+	},
+
+	{
+    
+    "manager": "DT",
+    "nombre": "Ernesto Valverde"
+
+	}
+
+	]
+
+}
